@@ -8,7 +8,7 @@ spec:
       image: laotacluong/golang-app:2.0
       volumeMounts:
       - name: config-volume
-        mountPath: /config
+        mountPath: /static
   volumes:
     - name: config-volume
       configMap:
