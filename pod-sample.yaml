@@ -16,4 +16,4 @@ spec:
         items:
         - key: config.properties
           path: config.conf
-  restartPolicy: Never
+
