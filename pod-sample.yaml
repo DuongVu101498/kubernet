@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: test-container
-      image: laotacluong/golang-app:v1
+      image: laotacluong/golang-app:2.0
       volumeMounts:
       - name: config-volume
         mountPath: /config
