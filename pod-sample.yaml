@@ -9,7 +9,7 @@ spec:
       command: [ "/bin/sh","-c","go run main.go" ]
       volumeMounts:
       - name: config-volume
-        mountPath: /static/volume
+        mountPath: ./static/volume
   volumes:
     - name: config-volume
       configMap:
