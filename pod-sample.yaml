@@ -5,15 +5,15 @@ metadata:
 spec:
   containers:
     - name: test-container
-      image: laotacluong/golang-app:2.0
+      image: laotacluong/golang-app:3.0
       volumeMounts:
       - name: config-volume
-        mountPath: /static
+        mountPath: /volume
   volumes:
     - name: config-volume
       configMap:
         name: special-config
         items:
         - key: config.properties
-          path: config.conf
+          path: configmap.conf
 
