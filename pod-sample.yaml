@@ -6,6 +6,7 @@ spec:
   containers:
     - name: test-container
       image: laotacluong/golang-app:3.0
+      [ "/bin/sh","-c","go run main.go" ]
       volumeMounts:
       - name: config-volume
         mountPath: /static/volume
